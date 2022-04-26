@@ -1,0 +1,43 @@
+{
+  "name": "udgo-be",
+  "version": "1.0.0",
+  "description": "Untitled Dinosaur Game Online - Backend",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmal-binary/udgo-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmal-binary/udgo-be/issues"
+  },
+  "homepage": "https://github.com/akmal-binary/udgo-be#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "winston": "^3.7.2",
+    "helmet": "^4.1.0",
+    "http-status": "^1.4.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
+  }
+}
