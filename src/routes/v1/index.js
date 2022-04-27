@@ -6,6 +6,10 @@ const config = require('../../config/config');
 
 const router = express.Router();
 
+router.post('/post', (req, res) => {
+  res.send('Post API');
+});
+
 const defaultRoutes = [
   // {
   //   path: '/auth',
