@@ -1,4 +1,4 @@
-// TODO: to keep authorization controller here 
+// TODO: to keep authorization controller here
 
 // EXAMPLE
 // const passport = require('passport');
