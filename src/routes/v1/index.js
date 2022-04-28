@@ -6,8 +6,19 @@ const config = require('../../config/config');
 
 const router = express.Router();
 
-router.post('/test', (req, res) => {
-  res.send('Post API');
+router.post('/testdata', (req, res) => {
+  res.write('Player                  Score \n');
+  res.write('Doom                    2504  \n');
+  res.write('Final Frontier          2043  \n');
+  res.write('Nighthawk               1765  \n');
+  res.write('Blair Ripper            1598  \n');
+  res.write('Slasher                 1330  \n');
+  res.write('Secret Pariah           1102  \n');
+  res.write('Unbridled               983   \n');
+  res.write('Martial Warlock         600   \n');
+  res.write('Dark Spirit             499   \n');
+  res.write('Tito                    245   \n');
+  res.end();
 });
 
 const defaultRoutes = [
