@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/akmal-binary/udgo-be#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.7",
