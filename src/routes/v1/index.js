@@ -3,22 +3,12 @@ const express = require('express');
 // const userRoute = require('./user.route');
 // const docsRoute = require('./docs.route');
 const config = require('../../config/config');
+const { data } = require('./data.json');
 
 const router = express.Router();
 
-router.post('/testdata', (req, res) => {
-  res.write('Player                  Score \n');
-  res.write('Doom                    2504  \n');
-  res.write('Final Frontier          2043  \n');
-  res.write('Nighthawk               1765  \n');
-  res.write('Blair Ripper            1598  \n');
-  res.write('Slasher                 1330  \n');
-  res.write('Secret Pariah           1102  \n');
-  res.write('Unbridled               983   \n');
-  res.write('Martial Warlock         600   \n');
-  res.write('Dark Spirit             499   \n');
-  res.write('Tito                    245   \n');
-  res.end();
+router.get('/data', (req, res) => {
+  res.send(JSON.stringify(data));
 });
 
 const defaultRoutes = [

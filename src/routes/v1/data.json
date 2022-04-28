@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "rank": "1",
+      "name": "Doom",
+      "score": "2504"
+    },
+    {
+      "rank": "2",
+      "name": "Final Frontier",
+      "score": "2249"
+    },
+    {
+      "rank": "3",
+      "name": "Nighthawk",
+      "score": "1765"
+    },
+    {
+      "rank": "4",
+      "name": "Blair Ripper",
+      "score": "1598"
+    },
+    {
+      "rank": "5",
+      "name": "Slasher",
+      "score": "1333"
+    },
+    {
+      "rank": "6",
+      "name": "Secret Pariah",
+      "score": "1102"
+    },
+    {
+      "rank": "7",
+      "name": "Unbridled",
+      "score": "983"
+    },
+    {
+      "rank": "8",
+      "name": "Martial Warlock",
+      "score": "600"
+    },
+    {
+      "rank": "9",
+      "name": "Dark Spirit",
+      "score": "499"
+    },
+    {
+      "rank": "10",
+      "name": "Tito",
+      "score": "204"
+    }
+  ]
+}
