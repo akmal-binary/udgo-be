@@ -6,7 +6,7 @@ const config = require('../../config/config');
 
 const router = express.Router();
 
-router.post('/post', (req, res) => {
+router.post('/test', (req, res) => {
   res.send('Post API');
 });
 
