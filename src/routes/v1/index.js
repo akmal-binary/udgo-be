@@ -3,8 +3,13 @@ const express = require('express');
 // const userRoute = require('./user.route');
 // const docsRoute = require('./docs.route');
 const config = require('../../config/config');
+const { data } = require('./data.json');
 
 const router = express.Router();
+
+router.get('/data', (req, res) => {
+  res.send(JSON.stringify(data));
+});
 
 const defaultRoutes = [
   // {
