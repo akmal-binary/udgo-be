@@ -2,16 +2,20 @@ const Mongoose = require('mongoose');
 const Schema = Mongoose.Schema;
 
 const highscore_schema = new Schema({
-    user: {
+    rank: {
+        type: Number,
+        default: 0,
+    },
+    name: {
         type: String,
         required: true,
     },
-    highscore: {
+    score: {
         type: Number,
         default: 0,
     }
 }, { timestamps: true });
 
-const Highscore = Mongoose.model('Highscore', highscore_schema);
+const Highscore = Mongoose.model('new-highscore', highscore_schema);
 
 module.exports = Highscore;
