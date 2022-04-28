@@ -1,9 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const xss = require('xss-clean');
-// const mongoSanitize = require('express-mongo-sanitize');
 const cors = require('cors');
-// const passport = require('passport');
 const httpStatus = require('http-status');
 const config = require('./config/config');
 const morgan = require('./config/morgan');
