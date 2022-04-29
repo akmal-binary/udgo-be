@@ -15,14 +15,10 @@ router.get('/data', (req, res) => {
 });
 
 router.get('/retrieve-highscore', (req, res) => {
-  const data = req.body.data[0];
-  const highscore = new Highscore({
-    rank: data.rank,
-    name: data.name,
-    score: data.score,
-  })
-  const new_data_object = { data: [highscore] }
-  res.send(new_data_object);
+  Highscore.find({}, (err, data) => {
+    const format_json = { "data": data }
+    res.send(format_json);
+  });
 });
 
 router.post('/add-highscore', (req, res) => {
@@ -32,8 +28,8 @@ router.post('/add-highscore', (req, res) => {
     rank: data.rank,
     name: data.name,
     score: data.score,
-  })
+  });
   highscore.save();
-})
+});
 
 module.exports = router;
