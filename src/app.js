@@ -47,31 +47,4 @@ app.get('/', function (req, res) {
   res.render('index', {});
 });
 
-// app.get('/add-highscore', (req, res) => {
-//   const random_number = Math.floor(Math.random() * 1000000);
-//   const highscore = new Highscore({ 
-//     rank: 1,
-//     user: `testscoretest${random_number}`,
-//     score: 10,
-//   })
-//   highscore.save()
-//     .then((result) => {
-//       res.send(result);
-//     })
-//     .catch((error) => {
-//       console.log(error)
-//     })
-// })
-
-// send back a 404 error for any unknown api request
-// app.use((req, res, next) => {
-//   next(new ApiError(httpStatus.NOT_FOUND, 'Not found'));
-// });
-
-// convert error to ApiError, if needed
-// app.use(errorConverter);
-
-// handle error
-// app.use(errorHandler);
-
 module.exports = app;
